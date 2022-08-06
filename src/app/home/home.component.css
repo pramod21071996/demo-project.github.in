@@ -1,0 +1,70 @@
+#social-group {
+    right: auto;
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    color: black;
+}
+
+#social-connectivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+#social-connectivity li {
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+}
+
+#social-connectivity::after, #email-connectivity::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: black;
+}
+
+#email-id {
+    left: auto;
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 10;
+    color: black;
+}
+
+#email-connectivity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#email-connectivity a {
+    margin: 0px auto;
+    padding: 10px;
+    letter-spacing: 0.1em;
+    writing-mode: vertical-rl;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+}
+
+#instagram-img img, #linkdin-img img {
+    width: 25px;
+}

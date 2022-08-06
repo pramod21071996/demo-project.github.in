@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/home">
+      <mat-icon aria-hidden="false" aria-label="Important Device icon" fontIcon="important_devices"></mat-icon>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item me-lg-2">
+          <a class="nav-link active" aria-current="page" href="#">01. About</a>
+        </li>
+        <li class="nav-item me-lg-2">
+          <a class="nav-link" aria-current="page" href="#">02. Experience</a>
+        </li>
+        <li class="nav-item me-lg-2">
+          <a class="nav-link" aria-current="page" href="#">03. Work</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">04. Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <div id="social-group">
+    <ul id="social-connectivity">
+      <li id="instagram-img"><img src="../../assets/instagram.png"/></li>
+      <li id="linkdin-img"><img src="../../assets/linkedin.png"/></li>
+    </ul>
+  </div>
+  <div id="email-id">
+    <div id="email-connectivity">
+      <a>pramodmore1996@gmail.com</a>
+    </div>
+  </div>
+  <div class="row justify-content-lg-center">
+    <div class="col col-lg-10 col-lg-auto">
+      <div>Hi, my name is</div>
+      <h1 class="display-1">Pramod More.</h1>
+      <h1 class="display-2">I build things for the web.</h1>
+      <div class="row mb-4">
+        <div class="col-lg-6 col-12 flex word-wrap">
+          I'm a software engineer specializing in building dynamic web applications.
+          Turning ideas into real life products is my calling.
+        </div>
+      </div>
+      <button mat-stroked-button color="warn" (click)="LoadResumeViewer()">Check out my Resume!</button>
+    </div>
+  </div>
+</div>
