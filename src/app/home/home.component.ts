@@ -1,5 +1,6 @@
 import { AfterViewInit, Component, HostListener, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -24,7 +25,7 @@ export class HomeComponent implements OnInit, AfterViewInit {
   }
 
   LoadResumeViewer() {
-    this._router.navigate([]).then(result => { window.open('/resume-viewer', '_blank') });
+    this._router.navigate([]).then(result => { window.open(`${environment.URL}/resume-viewer`, '_blank') });
   }
 
 }
