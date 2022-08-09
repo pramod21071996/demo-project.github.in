@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mb-4">
   <div class="container">
     <a class="navbar-brand" routerLink="/home">
       <mat-icon aria-hidden="false" aria-label="Important Device icon" fontIcon="important_devices"></mat-icon>
@@ -26,29 +26,108 @@
   </div>
 </nav>
 <div class="container">
-  <div id="social-group">
-    <ul id="social-connectivity">
-      <li id="instagram-img"><img src="assets/instagram.png"/></li>
-      <li id="linkdin-img"><img src="assets/linkedin.png"/></li>
-    </ul>
-  </div>
-  <div id="email-id">
-    <div id="email-connectivity">
-      <a>pramodmore1996@gmail.com</a>
+  <!-- <div class="d-lg-block d-none">
+    <div id="social-group">
+      <ul id="social-connectivity">
+        <li id="instagram-img"><img src="assets/instagram.png"/></li>
+        <li id="linkdin-img"><img src="assets/linkedin.png"/></li>
+      </ul>
     </div>
-  </div>
-  <div class="row justify-content-lg-center">
-    <div class="col col-lg-10 col-lg-auto">
-      <div>Hi, my name is</div>
-      <h1 class="display-1">Pramod More.</h1>
-      <h1 class="display-2">I build things for the web.</h1>
-      <div class="row mb-4">
-        <div class="col-lg-6 col-12 flex word-wrap">
-          I'm a software engineer specializing in building dynamic web applications.
-          Turning ideas into real life products is my calling.
-        </div>
+    <div id="email-id">
+      <div id="email-connectivity">
+        <a>pramodmore1996@gmail.com</a>
       </div>
-      <button mat-stroked-button color="warn" (click)="LoadResumeViewer()">Check out my Resume!</button>
     </div>
-  </div>
+  </div> -->
+  <section id="home-section" class="mb-5" >
+    <div class="row justify-content-lg-center">
+      <div class="col">
+        <div>Hi, my name is</div>
+        <h1 class="display-1">Pramod More.</h1>
+        <h1 class="display-2">I build things for the web.</h1>
+        <div class="row mb-4">
+          <div class="col-lg-6 col-12 flex word-wrap">
+            I'm a software engineer specializing in building dynamic web applications.
+            Turning ideas into real life products is my calling.
+          </div>
+        </div>
+        <button mat-raised-button color="warn" (click)="LoadResumeViewer()">Check out my Resume!</button>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="home-section" class="mb-5" >
+    <div class="row justify-content-lg-center">
+      <div class="col col-lg-10 col-lg-auto">
+        <div>Hi, my name is</div>
+        <h1 class="display-1">Pramod More.</h1>
+        <h1 class="display-2">I build things for the web.</h1>
+        <div class="row mb-4">
+          <div class="col-lg-6 col-12 flex word-wrap">
+            I'm a software engineer specializing in building dynamic web applications.
+            Turning ideas into real life products is my calling.
+          </div>
+        </div>
+        <button mat-raised-button color="warn" (click)="LoadResumeViewer()">Check out my Resume!</button>
+      </div>
+    </div>
+  </section> -->
+  <hr>
+  <section id="about-section">
+    <div class="row justify-content-lg-center">
+      <div class="col">
+        <!-- <div class="mb-4">01. About Me </div> -->
+        <div class="row">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div class="about-img-box">
+              <!-- <img src="assets/about.png"/> -->
+              <mat-icon aria-hidden="false" aria-label="About icon" fontIcon="wallpaper"></mat-icon>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <h1 class="display-4">01. About Me</h1>
+            <p>
+              Hello! My name is Pramod. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </section>
+  <!-- <section id="about-section">
+    <div class="row justify-content-lg-center">
+      <div class="col col-lg-10 col-lg-auto">
+        <div class="row">
+          <div class="col col-lg-6">
+            <div class="about-img-box">
+              <mat-icon aria-hidden="false" aria-label="About icon" fontIcon="wallpaper"></mat-icon>
+            </div>
+          </div>
+          <div class="col col-lg-6">
+            <h1 class="display-4">01. About Me</h1>
+            <p>
+              Hello! My name is Pramod. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+            <p>
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+        </div>
+        <p></p>
+      </div>
+    </div>
+  </section> -->
 </div>

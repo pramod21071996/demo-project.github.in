@@ -1,10 +1,14 @@
+#home-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 #social-group {
     right: auto;
     width: 40px;
     position: fixed;
     bottom: 0px;
     z-index: 10;
-    color: black;
 }
 
 #social-connectivity {
@@ -31,7 +35,7 @@
     width: 1px;
     height: 90px;
     margin: 0px auto;
-    background-color: black;
+    background-color: #637188;
 }
 
 #email-id {
@@ -40,7 +44,6 @@
     position: fixed;
     bottom: 0px;
     z-index: 10;
-    color: black;
 }
 
 #email-connectivity {
@@ -67,4 +70,21 @@ a {
 
 #instagram-img img, #linkdin-img img {
     width: 25px;
+}
+
+#about-section {
+    /* background-color: #637188; */
+    padding-bottom: 120px;
+}
+
+.about-img-box {
+    width: auto;
+    height: 350px;
+    background-color: #637188;
+}
+
+.about-img-box mat-icon {
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
 }
