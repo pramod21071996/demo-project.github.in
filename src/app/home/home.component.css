@@ -72,9 +72,18 @@ a {
     width: 25px;
 }
 
-#about-section {
+#about-section, #experience-section, #work-section, #contact-section {
     /* background-color: #637188; */
+    /* padding-top: 60px; */
     padding-bottom: 120px;
+}
+
+#experience-section #v-pills-tab .nav-link {
+    color: #fff !important;
+}
+
+#experience-section #v-pills-tab .active {
+    background-color: #f44336 !important;
 }
 
 .about-img-box {
