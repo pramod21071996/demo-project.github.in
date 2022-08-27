@@ -83,7 +83,10 @@ a {
 }
 
 #experience-section #v-pills-tab .active {
-    background-color: #f44336 !important;
+    border-left: #f44336 2px solid;
+    background-color: transparent !important;
+    color: #f44336 !important;
+    border-radius: 0px;
 }
 
 .about-img-box {
@@ -96,4 +99,58 @@ a {
     font-size: 80px;
     width: 100px;
     height: 100px;
+}
+
+.hello-btn, .check-out-resume-btn {
+    border: #f44336 1px solid;
+    background-color: transparent;
+    color: #f44336;
+}
+
+.hello-btn:hover, .check-out-resume-btn:hover {
+    background-color: #fff;
+    border: #f44336 1px solid;
+    color: #f44336;
+}
+
+.get-in-touch-text {
+    font-family: fantasy;
+}
+
+.what-next-text, .experience-title, .about-title, .about-technologies {
+    color: #f44336;
+    font-size: 20px;
+}
+
+.experience-btn-left-border {
+    border-left: #4f4f50 1px solid;
+}
+
+.organisation-detail-text {
+    font-family: fantasy;
+}
+
+.about-me-detail {
+    font-family: monospace;
+}
+
+.about-technologies {
+    font-family: fantasy;
+}
+
+.about-me-detail p {
+    text-indent: 50px;
+    text-align: justify;
+}
+
+.developer-name-text {
+    font-family: fantasy;
+}
+
+.myname-text {
+    color: #f44336;
+}
+
+footer {
+    border: #f44336 1px solid;
 }
