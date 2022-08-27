@@ -1,6 +1,6 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mb-4">
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark mb-4">
   <div class="container">
-    <a class="navbar-brand" routerLink="/home">
+    <a class="navbar-brand" (click)="navigateToSection('home-section')">
       <mat-icon aria-hidden="false" aria-label="Important Device icon" fontIcon="important_devices"></mat-icon>
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -9,20 +9,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item me-lg-2">
-          <a class="nav-link" aria-current="page" href="#">01. About</a>
+        <li class="nav-item me-lg-2" id="home-section-menu">
+          <a class="nav-link active-navbar-menu" (click)="navigateToSection('home-section')">01. Home</a>
           <!-- <a class="nav-link active" aria-current="page" href="#about-section">01. About</a> -->
         </li>
-        <li class="nav-item me-lg-2">
-          <a class="nav-link" aria-current="page" href="#">02. Experience</a>
+        <li class="nav-item me-lg-2" id="about-section-menu">
+          <a class="nav-link" (click)="navigateToSection('about-section')">02. About</a>
+          <!-- <a class="nav-link active" aria-current="page" href="#about-section">01. About</a> -->
+        </li>
+        <li class="nav-item me-lg-2" id="experience-section-menu">
+          <a class="nav-link" (click)="navigateToSection('experience-section')">03. Experience</a>
           <!-- <a class="nav-link" aria-current="page" href="#experience-section">02. Experience</a> -->
         </li>
-        <li class="nav-item me-lg-2">
-          <a class="nav-link" aria-current="page" href="#">03. Work</a>
+        <li class="nav-item me-lg-2" id="work-section-menu">
+          <a class="nav-link" (click)="navigateToSection('work-section')">04. Work</a>
           <!-- <a class="nav-link" aria-current="page" href="#work-section">03. Work</a> -->
         </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">04. Contact</a>
+        <li class="nav-item" id="contact-section-menu">
+          <a class="nav-link" (click)="navigateToSection('contact-section')">05. Contact</a>
           <!-- <a class="nav-link" aria-current="page" href="#contact-section">04. Contact</a> -->
         </li>
       </ul>
@@ -157,7 +161,8 @@
   <section id="work-section">
     <div class="row justify-content-lg-center">
       <div class="col">
-        <h1 class="display-6 mb-4">03. Work section coming soon...</h1>
+        <h1 class="display-6 mb-4 text-center work-section-text">03. Some Things I’ve Built</h1>
+        <h1 class="display-6 mb-4">Work section coming soon...</h1>
       </div>
     </div>
   </section>
@@ -182,3 +187,6 @@
     </div>
   </footer>
 </div>
+<!-- <div class="scroll-upward-arrow">
+  <mat-icon aria-hidden="false" aria-label="Scroll to top of the page" fontIcon="arrow_upward" (click)="navigateToSection('home-section')"></mat-icon>
+</div> -->

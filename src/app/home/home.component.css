@@ -1,5 +1,5 @@
 #home-section {
-    padding-top: 120px;
+    padding-top: 180px;
     padding-bottom: 120px;
 }
 
@@ -107,7 +107,7 @@ a {
     color: #f44336;
 }
 
-.hello-btn:hover, .check-out-resume-btn:hover {
+.hello-btn:hover, .check-out-resume-btn:hover, .scroll-upward-arrow:hover {
     background-color: #fff;
     border: #f44336 1px solid;
     color: #f44336;
@@ -117,7 +117,7 @@ a {
     font-family: fantasy;
 }
 
-.what-next-text, .experience-title, .about-title, .about-technologies {
+.what-next-text, .experience-title, .about-title, .about-technologies, .work-section-text {
     color: #f44336;
     font-size: 20px;
 }
@@ -151,6 +151,27 @@ a {
     color: #f44336;
 }
 
+.active-navbar-menu {
+    color: #f44336 !important;
+}
+
 footer {
     border: #f44336 1px solid;
+}
+
+#navbarSupportedContent ul li {
+    cursor: pointer;
+}
+
+.scroll-upward-arrow {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    border: #f44336 1px solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

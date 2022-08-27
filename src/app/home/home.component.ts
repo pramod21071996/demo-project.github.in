@@ -8,10 +8,11 @@ import { OrganisationDetail } from '../Models/ViewModel';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit, AfterViewInit {
+export class HomeComponent implements OnInit {
 
   currentOrganisationDetail: OrganisationDetail[] = [];
   previousOrganisationDetail: OrganisationDetail[] = [];
+  isClickOnNavMenu: boolean = false;
   constructor(private _router: Router) { }
 
   ngOnInit() {
@@ -34,18 +35,34 @@ export class HomeComponent implements OnInit, AfterViewInit {
     ]
   }
 
-  ngAfterViewInit() {
-    this.onResize();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize() {
-    const leftPosition = document.getElementById('social-group')?.offsetLeft;
-    document.getElementById('email-id')?.setAttribute('style', `right:${leftPosition}px;`);
-  }
-
   LoadResumeViewer() {
     this._router.navigate([]).then(result => { window.open(`${environment.URL}/resume-viewer`, '_blank') });
+  }
+
+  navigateToSection(navbarManu: string) {
+    this.isClickOnNavMenu = true;
+    let navbarHeight = document.getElementsByTagName('nav')[0]?.offsetHeight;
+    let sectionHeight = document.getElementById(`${navbarManu}`)?.offsetTop ?? 0;
+    sectionHeight = sectionHeight >= navbarHeight ? sectionHeight - navbarHeight - 16 : sectionHeight - 16;
+    window.scrollTo({ top: sectionHeight, behavior: 'smooth' });
+    document.getElementsByClassName('active-navbar-menu')[0]?.classList?.remove('active-navbar-menu');
+    document.querySelector(`#${navbarManu}-menu a`)?.classList.add('active-navbar-menu');
+    setTimeout(() => {
+      this.isClickOnNavMenu = false;
+    }, 1000);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  onScroll(event: any) {
+    if (!this.isClickOnNavMenu) {
+      let navbarHeight = document.getElementsByTagName('nav')[0]?.offsetHeight;
+      const li = document.querySelectorAll('.nav-item a');
+      const sections = document.querySelectorAll('section');
+      let sectionsLength = sections.length;
+      while(--sectionsLength && Math.ceil(window.scrollY + navbarHeight) + 16 < sections[sectionsLength].offsetTop) {}
+      li.forEach(x => x.classList.remove('active-navbar-menu'));
+      li[sectionsLength]?.classList.add('active-navbar-menu');
+    }
   }
 
 }
